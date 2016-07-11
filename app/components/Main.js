@@ -4,7 +4,6 @@ var Main = React.createClass({
     render: function(){
         return (
             <div className='container'>
-                Hello from Main!
                 {this.props.children}
             </div>
         )
