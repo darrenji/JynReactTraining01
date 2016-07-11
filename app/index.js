@@ -4,8 +4,8 @@ var ReactDOM = require('react-dom');
 
 var USER_DATA = {
     name: 'darrenji',
-    username: 'darren',
-    image: 'https://avatars0.githubusercontent.com/u/2933430?v=3&s=460'
+    username: 'darrenji',
+    image: 'https://avatars2.githubusercontent.com/u/2604576?v=3&s=460'  
 }
 
 var ProfilePic = React.createClass({
@@ -14,13 +14,29 @@ var ProfilePic = React.createClass({
     }
 });
 
+var Link = React.createClass({
+    changeURL: function(){       
+        window.location.replace(this.props.href)
+    },    
+    render: function(){
+        return (
+            <span
+                style={{color: 'blue', cursor: 'pointer'}}
+                onClick={this.changeURL}
+            >
+                {this.props.children}
+            </span>
+        )
+    }
+})
+
 var ProfileLink = React.createClass({
     render: function(){
         return (
             <div>
-                <a href={'https://www.github.com/' + this.props.username}>
+                <Link href={'https://www.github.com/' + this.props.username}>
                     {this.props.username}
-                </a>
+                </Link>
             </div>
         )
     }
