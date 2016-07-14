@@ -1,5 +1,13 @@
 就依你React培训开篇，React基础。
 
+# 谁在使用React #
+
+- https://www.quora.com/Who-is-using-Facebook-React
+- https://github.com/facebook/react/wiki/Sites-Using-React
+
+<br>
+
+
 # React是什么 #
 
 Javascript库，以组件的方式来写。
